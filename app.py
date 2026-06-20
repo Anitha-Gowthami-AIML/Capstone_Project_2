@@ -781,7 +781,7 @@ with TAB_DEEPDIVE:
     cols[2].metric("Test R²", f"{m['test']['R2']:.3f}")
     cols[3].metric("Train RMSE", f"{m['train']['RMSE']:.3f} °C")
 
-    with st.expander("Model configuration / hyperparameters"):
+with st.expander("Model configuration / hyperparameters"):
     params = m.get("params", None)
     
     if params:
