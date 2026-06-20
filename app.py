@@ -328,7 +328,7 @@ def render_hero():
             <h1>🌡️ Melbourne Daily Minimum Temperature</h1>
             <p>Forecasting Explainability Lab — sunset-to-storm seasonality, ten years of
             real weather, and eight models (statistical, deep learning, and modern
-            forecasting libraries) compared side by side, explained for everyone.</p>
+            forecasting libraries) compared side by side.</p>
             <div class="hero-pills">
                 <span class="hero-pill">📍 Melbourne, Australia</span>
                 <span class="hero-pill">📅 1981 – 1990</span>
