@@ -1,0 +1,13 @@
+ipykernel
+numpy
+pandas
+matplotlib
+seaborn
+statsmodels
+scikit-learn
+keras
+tensorflow
+prophet
+neuralprophet
+joblib
+kagglehub
