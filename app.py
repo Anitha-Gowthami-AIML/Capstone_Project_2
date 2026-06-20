@@ -781,13 +781,13 @@ with TAB_DEEPDIVE:
     cols[2].metric("Test R²", f"{m['test']['R2']:.3f}")
     cols[3].metric("Train RMSE", f"{m['train']['RMSE']:.3f} °C")
 
-with st.expander("Model configuration / hyperparameters"):
-    params = m.get("params", None)
-    
-    if params:
-        st.json(params)
-    else:
-        st.info("No hyperparameters logged for this model.")
+    with st.expander("Model configuration / hyperparameters"):
+        params = m.get("params", None)
+        
+        if params:
+            st.json(params)
+        else:
+            st.info("No hyperparameters logged for this model.")
 
     st.subheader("Actual vs. Predicted")
     split_choice = st.radio("Show:", ["Test (held-out)", "Train", "Both"], horizontal=True, key=f"split_{selected}")
